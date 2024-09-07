@@ -1,0 +1,158 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Smooth scrolling for the transitions */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #0d0d0d;
+    overflow-x: hidden;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(0.3);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: cyan;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: cyan;
+}
+
+#about h2 {
+    font-size: 2.5em;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #111111;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5); /* Shadow on social media icons */
+    border-radius: 50%;
+}
+
+.social-media a img {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+/* Button Styles */
+button {
+    background-color: cyan;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #0d0d0d;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5); /* Shadow on buttons */
+}
+
+button:hover {
+    background-color: #00bcd4;
+    transform: scale(1.1);
+}
+
+/* Divider Line */
+.divider {
+    height: 2px;
+    background-color: cyan;
+    margin: 50px auto;
+    width: 60%; /* Shorter line */
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5); /* Shadow on divider */
+}
+
+/* Smooth Scroll Transition */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scroll Effects */
+nav ul li a {
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+section {
+    transition: opacity 5s ease-in-out;
+    opacity: 1;
+}
